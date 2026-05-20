@@ -41,3 +41,6 @@ li {
 #Connect a{
     color:#f2f2f2;
 }
+#Skills ul{
+    display: flex;
+}

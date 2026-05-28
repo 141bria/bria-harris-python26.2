@@ -22,3 +22,30 @@ skills.forEach(function (skill) {
   skillsList.appendChild(skillItem);
   console.log(skill);
 });
+const messageForm = document.querySelector('[name="leave_message"]');
+// needs to have 3 variables for each form submission
+// hint is event.target(form) & event.target.userName is the input element
+messageForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const usersName = event.target.usersName.value;
+  const usersEmail = event.target.usersEmail.value;
+  const message = event.target.message.value;
+  console.log(usersName);
+  console.log(usersEmail);
+  console.log(message);
+  const messageSection = document.querySelector("#messages");
+  const messageList = messageSection.querySelector("ul");
+  const newMessage = document.createElement("li");
+  event.target.reset();
+});
+newMessage.innerHTML = ` < a href="mailto:${usersEmail}">${usersName}</a> 
+<span>${message}</span>`;
+const removeButton = document.createElement("button");
+removeButton.innerText = "remove";
+removeButton.type = "button";
+removeButton.addEventListener("click", function () {
+  const entry = removeButton.parentNode;
+  entry.remove();
+});
+newMessage.appendChild(removeButton);
+messageList.appendChild(newMessage);

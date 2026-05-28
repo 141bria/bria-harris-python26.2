@@ -1,7 +1,7 @@
 body {
   background-color: #87838b;
   color: #ffffff;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 h2 {
   color: #000000;
@@ -14,14 +14,13 @@ h2 {
 }
 
 #Connect {
-
-display:flex;
-background-color: #400381;
-width: 200px;
-margin: 10px 20px
-font-size: 25px;
-font-weight:bold;
-text-align: center;
+  display: flex;
+  background-color: #400381;
+  width: 200px;
+  margin: 10px 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
 h1 {
   color: rgba(0, 0, 0, 0.959);
@@ -35,14 +34,14 @@ li {
   margin: 20px;
   display: inline-block;
 }
-#Experience ul{
-    display: flex;
+#Experience ul {
+  display: flex;
 }
-#Connect a{
-    color:#f2f2f2;
+#Connect a {
+  color: #f2f2f2;
 }
 button {
-  padding:8px;
+  padding: 8px;
   margin-top: 10px;
 }
 input,
@@ -52,6 +51,6 @@ textarea {
 }
 input,
 textarea,
-button{
+button {
   width: 70%;
 }

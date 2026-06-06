@@ -37,15 +37,36 @@ messageForm.addEventListener("submit", function (event) {
   const messageList = messageSection.querySelector("ul");
   const newMessage = document.createElement("li");
   event.target.reset();
-});
-newMessage.innerHTML = ` < a href="mailto:${usersEmail}">${usersName}</a> 
+  newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> 
 <span>${message}</span>`;
+});
 const removeButton = document.createElement("button");
 removeButton.innerText = "remove";
 removeButton.type = "button";
 removeButton.addEventListener("click", function () {
   const entry = removeButton.parentNode;
   entry.remove();
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
 });
-newMessage.appendChild(removeButton);
-messageList.appendChild(newMessage);
+function fetchRepos() {
+  fetch("https://api.github.com/users/141bria/repos")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      const repositories = data;
+      console.log(repositories);
+      for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+const projectSection = document.querySelector("#Projects");
+const projectList = projectSection.querySelector("ul");
+fetchRepos();

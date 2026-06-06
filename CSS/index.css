@@ -57,3 +57,7 @@ button {
 #Skills {
   display: flex;
 }
+#Projects li {
+  display: flex;
+  color: aqua;
+}

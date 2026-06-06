@@ -8,12 +8,12 @@ h2 {
   background: #8436b8fb;
   width: 400px;
   margin: 20px 10px;
-  padding: 30 40px;
+  padding: 30px 40px;
   font-size: 28px;
   font-weight: bold;
 }
 
-#Connect {
+#Connect ul {
   display: flex;
   background-color: #400381;
   width: 200px;

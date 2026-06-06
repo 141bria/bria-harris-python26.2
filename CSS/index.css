@@ -57,7 +57,7 @@ button {
 #Skills {
   display: flex;
 }
-#Projects li {
+#Projects ul {
   display: flex;
   color: aqua;
 }

@@ -65,6 +65,9 @@ function fetchRepos() {
     })
     .catch((error) => {
       console.log(error);
+      let errorMessage = document.createElement("li");
+      errorMessage.innerText = "Sorry, the projects could not be loaded.";
+      projectList.appendChild(errorMessage);
     });
 }
 const projectSection = document.querySelector("#Projects");

@@ -1,0 +1,46 @@
+body {
+  background-color: #87838b;
+  color: #ffffff;
+  font-family:'Courier New', Courier, monospace;
+}
+h2 {
+  color: #000000;
+  background: #8436b8fb;
+  width: 400px;
+  margin: 20px 10px;
+  padding: 30 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#Connect {
+
+display:flex;
+background-color: #400381;
+width: 200px;
+margin: 10px 20px
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+}
+h1 {
+  color: rgba(0, 0, 0, 0.959);
+  font-family: cursive;
+  font-weight: bold;
+}
+li {
+  background-color: #474444;
+  color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+}
+#Experience {
+    display: flex;
+}
+#Connect a{
+    color:#f2f2f2;
+}
+#Skills ul{
+    display: flex;
+}

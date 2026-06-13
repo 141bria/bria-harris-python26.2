@@ -44,8 +44,7 @@ const removeButton = document.createElement("button");
 removeButton.innerText = "remove";
 removeButton.type = "button";
 removeButton.addEventListener("click", function () {
-  const entry = removeButton.parentNode;
-  entry.remove();
+  removeButton.parentNode.remove();
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
 });

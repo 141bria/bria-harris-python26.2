@@ -39,12 +39,12 @@ messageForm.addEventListener("submit", function (event) {
   event.target.reset();
   newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> 
 <span>${message}</span>`;
-});
-const removeButton = document.createElement("button");
-removeButton.innerText = "remove";
-removeButton.type = "button";
-removeButton.addEventListener("click", function () {
-  removeButton.parentNode.remove();
+  const removeButton = document.createElement("button");
+  removeButton.innerText = "remove";
+  removeButton.type = "button";
+  removeButton.addEventListener("click", function () {
+    removeButton.parentNode.remove();
+  });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
 });

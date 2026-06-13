@@ -29,7 +29,7 @@ messageForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const usersName = event.target.usersName.value;
   const usersEmail = event.target.usersEmail.value;
-  const message = event.target.message.value;
+  const message = event.target.usersMessage.value;
   console.log(usersName);
   console.log(usersEmail);
   console.log(message);

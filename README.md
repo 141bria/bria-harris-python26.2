@@ -1,3 +1,13 @@
-# bria-harris-python26.2
-Portfolio Project for intro to programming course w/CTD
-// Bria Harris
+# Bria Harris Portfolio Project
+
+Final project files are located in the root directory of this repository.
+
+Portfolio:
+-index.html
+
+- js/index.js
+- css/index.css
+
+Open API Projects:
+dogs.html
+js/dogs.js

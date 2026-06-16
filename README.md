@@ -3,7 +3,8 @@
 Final project files are located in the root directory of this repository.
 
 Portfolio:
--index.html
+
+- index.html
 
 - js/index.js
 - css/index.css

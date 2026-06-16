@@ -9,5 +9,5 @@ Portfolio:
 - css/index.css
 
 Open API Projects:
-dogs.html
-js/dogs.js
+-dogs.html
+-js/dogs.js
